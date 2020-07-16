@@ -4,7 +4,7 @@ const vision = require('@google-cloud/vision');
 async function app(){
   const client = new vision.ImageAnnotatorClient();
 
-  const fileName = 'pic.jpg';
+  const fileName = 'pic2.jpg';
 
   const [result] = await client.documentTextDetection(fileName);
   const fullTextAnnotation = result.fullTextAnnotation;
