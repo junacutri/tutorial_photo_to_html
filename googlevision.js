@@ -46,7 +46,6 @@ function convertToHtml(text){
   });
   resultHTML = resultHTML.split("src=' ").join("src='");
 
-  console.log(resultHTML);
   fs.writeFile("test.html", resultHTML, function(err) {
     if(err) {
         return console.log(err);
